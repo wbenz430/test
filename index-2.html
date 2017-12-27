@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,600');
+		@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+		*{
+			font-family: "Josefin Sans","Noto Sans TC";
+		}
+		body,h1,h2,h3,h4,h5,h6,ul,li,p{
+			margin: 0;
+			padding: 0;
+		}
+		.clearfix::after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		a{
+			text-decoration: none;
+			color:#000;
+		}
+		img{
+			width: 100%;
+		}
+		.fixed-width{
+			width: 960px;
+			margin:auto;
+		}
+		.full-width{
+			width: 100%;
+		}
+		.col-2{
+			width: calc(100% / 2 - 30px);
+			float: left;
+			margin: 0 15px;
+		}
+		.col-3{
+			width: calc(100% / 3 - 30px);
+			float: left;
+			margin: 0 15px;
+		}
+		.col-4{
+			width: calc(100% / 4 - 30px);
+			float: left;
+			margin: 0 15px;
+		}
+		nav{
+			background-color: transparent;
+			position: fixed;
+			z-index: 9;
+		}
+		nav .logo{
+			float: left;
+			height: 40px;
+			line-height: 40px;
+			color: #fff;
+			font-size: 22px;
+			border: 3px solid #FFF;
+			font-weight: 600;
+			margin:12px 0; 
+			padding: 0 5px;
+		}
+		nav .orange{
+			color:#c15d1f;
+		}
+		nav ul{
+			float: right;
+		}
+		nav li {
+			list-style-type: none;
+			float: left;
+		}
+		nav a{
+			display: block;
+			height: 70px;
+			line-height: 70px;
+			color: #fff;
+			text-align: center;
+			padding-left: 15px;
+		}
+		header{
+			background-image: url(jorik-blom-366499.jpg);
+			background-repeat: no-repeat;
+			-webkit-background-size: cover;
+			background-size: cover;
+			background-position: center;
+			padding: 250px 0 500px 0;
+			
+		}
+		header .title{
+			text-align: center;
+		}
+		header .title h1{
+			font-size: 36px;
+			color:#fff;
+		}
+		header .title hr{
+			width: 270px;
+			height: 1px;
+			background-color: #fff;
+		}
+		header .title h3{
+			color: #fff;
+			font-style: italic;
+			font-size: 24px;
+		}
+		header .title a,header .right a{
+			display: block;
+			width: 86px;
+			height: 25px;
+			text-align: center;
+			line-height: 25px;
+			background-color: rgba(255,255,255,.5);
+			padding: 10px 20px;
+			margin: auto;
+			margin-top: 50px;
+			border-radius: 5px;
+			transition: all 0.3s;
+		}
+		header .title a:hover{
+			background-color: #c15d1f;
+		}
+		header .menu{
+			color: #fff;
+			text-align: center;
+			margin-top: 50px;
+			
+		}
+		header .icon{
+			border-radius: 50%;
+			border: 1px solid #fff;
+			padding: 10px;
+			margin-bottom: 15px;
+		}
+		header .menu .col-3{
+			transition:all 0.3s;
+			padding: 15px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		header .menu .col-3:hover{
+			background-color: rgba(0,0,0,0.5);
+		}
+		.orangeblock{
+			height: 200px;
+			background-color: #c15d1f;
+			margin-top: 50px;
+		}
+		.orangeblock .left{
+			float: left;
+			font-size: 24px;
+			color:#fff;
+			line-height: 200px;
+		}
+		.orangeblock .right{
+			float: right;
+		}
+		.orangeblock .right a {
+			font-size: 14px;
+			margin-top: 77.5px;
+
+		}
+		.what{
+			text-align: center;
+		}
+		.what h2{
+			color: #fff;
+			margin: 30px 0 15px 0;
+			font-size: 36px;
+		}
+		.what h4{
+			color: #fff;
+			margin: 15px 0 60px 0;
+		}
+		.what .col-3{
+			background-color: #fff;
+			padding: 10px;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			margin-top: 15px;
+			margin-bottom: 15px;
+		}
+		.what .col-3 h5{
+			margin: 5px 0;
+			color: rgba(0,0,0,0.8); 
+			font-size: 18px;
+		}
+		.what .col-3 p {
+			font-size: 12px;
+			color: rgba(0,0,0,0.7);
+		}
+	</style>
+</head>
+<body>
+	<!-- nav.full-width>.fixed-width>.logo+ul>li*8>a -->
+	<nav class="full-width clearfix">
+		<div class="fixed-width">
+			<div class="logo">FEATURE<span class="orange">D</span></div>
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">Service</a></li>
+				<li><a href="">About Us</a></li>
+				<li><a href="">Team</a></li>
+				<li><a href="">Store</a></li>
+				<li><a href="">Testimonial</a></li>
+				<li><a href="">News</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+	<header class="full-width">
+		<div class="title">
+			<h1>Beautiful WordPress Business Theme</h1>
+			<hr>
+			<h3>Cleanly Coded With User Friendly Interface</h3>
+			<a href="">Buy Now</a>
+		</div>
+		<div class="menu full-width clearfix">
+			<div class="col-3">
+				<div class="icon fa fa-star fa-2x"></div>
+				<h4>Parallax Effect</h4>
+				<p>Lorem ipsum dolor sit amet</p>
+			</div>
+			<div class="col-3">
+				<div class="icon fa fa-thumbs-up fa-2x"></div>
+				<h4>Unlimited Options</h4>
+				<p>Lorem ipsum dolor sit amet</p>
+			</div>
+			<div class="col-3">
+				<div class="icon fa fa-sign-language fa-2x"></div>
+				<h4>Responsice Design</h4>
+				<p>Lorem ipsum dolor sit amet</p>
+			</div>
+		</div>
+		<div class="orangeblock full-width">
+			<div class="fixed-width">
+				<div class="left">
+					Easy to step up, just take a few steps and your website is ready within a minute
+				</div>
+				<div class="right">
+					<a href="">Call To Action</a>
+				</div>
+			</div>
+		</div>
+		<div class="what">
+			<div class="fixed-width">
+				<h2>What We Do</h2>
+				<h4>This Is SubTitle</h4>
+				<!-- .col-3*6>.icon_what+h5+p{Aliquam varius ligula tempor, vehicula mauris sed, efficitur dui. Aenean euismod felis quis purus varius, nec laoreet leo mollis. Curabitur eget porta velit, non convallis velit. Aenean tempor rutrum ante at vulputate} -->
+				<div class="col-3">
+					<div class="icon_what fa fa-medium"></div>
+					<h5>Frequently Asked Question</h5>
+					<p>Aliquam varius ligula tempor, vehicula mauris sed, efficitur dui. Aenean euismod felis quis purus varius, nec laoreet leo mollis. Curabitur eget porta velit, non convallis velit. Aenean tempor rutrum ante at vulputate</p>
+				</div>
+				<div class="col-3">
+					<div class="icon_what fa fa-ioxhost"></div>
+					<h5>Free Training & Courses</h5>
+					<p>Aliquam varius ligula tempor, vehicula mauris sed, efficitur dui. Aenean euismod felis quis purus varius, nec laoreet leo mollis. Curabitur eget porta velit, non convallis velit. Aenean tempor rutrum ante at vulputate</p>
+				</div>
+				<div class="col-3">
+					<div class="icon_what fa fa-stumbleupon"></div>
+					<h5>Clean Code</h5>
+					<p>Aliquam varius ligula tempor, vehicula mauris sed, efficitur dui. Aenean euismod felis quis purus varius, nec laoreet leo mollis. Curabitur eget porta velit, non convallis velit. Aenean tempor rutrum ante at vulputate</p>
+				</div>
+				<div class="col-3">
+					<div class="icon_what fa fa-hospital-o"></div>
+					<h5>Only Good In PayPal</h5>
+					<p>Aliquam varius ligula tempor, vehicula mauris sed, efficitur dui. Aenean euismod felis quis purus varius, nec laoreet leo mollis. Curabitur eget porta velit, non convallis velit. Aenean tempor rutrum ante at vulputate</p>
+				</div>
+				<div class="col-3">
+					<div class="icon_what fa fa-openid"></div>
+					<h5>Production Graph</h5>
+					<p>Aliquam varius ligula tempor, vehicula mauris sed, efficitur dui. Aenean euismod felis quis purus varius, nec laoreet leo mollis. Curabitur eget porta velit, non convallis velit. Aenean tempor rutrum ante at vulputate</p>
+				</div>
+				<div class="col-3">
+					<div class="icon_what fa fa-wheelchair-alt"></div>
+					<h5>Marketing Strategy</h5>
+					<p>Aliquam varius ligula tempor, vehicula mauris sed, efficitur dui. Aenean euismod felis quis purus varius, nec laoreet leo mollis. Curabitur eget porta velit, non convallis velit. Aenean tempor rutrum ante at vulputate</p>
+				</div>
+			</div>
+		</div>
+	</header>
+</body>
+</html>
